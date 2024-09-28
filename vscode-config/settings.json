@@ -1,0 +1,249 @@
+{
+	// Window:
+	"window.zoomLevel": 0,
+
+	// Menubar visibility:
+	"window.menuBarVisibility": "toggle",
+	"window.density.editorTabHeight": "default",
+	"window.titleBarStyle": "custom",
+
+	// Editor:
+	"editor.tabSize": 2,
+	"editor.fontSize": 14,
+	"editor.fontFamily": "JetBrainsMono Nerd Font",
+	"editor.wordWrap": "bounded",
+	"editor.wrappingIndent": "same",
+	"editor.lineNumbers": "relative",
+	"editor.wordWrapColumn": 150,
+	"editor.folding": false,
+	"editor.glyphMargin": false,
+	"editor.smoothScrolling": false,
+	"editor.quickSuggestionsDelay": 0,
+	"editor.cursorBlinking": "blink",
+	"editor.bracketPairColorization.enabled": false,
+	"editor.scrollbar.horizontal": "hidden",
+	"editor.scrollbar.vertical": "hidden",
+	"editor.hideCursorInOverviewRuler": true,
+	"editor.cursorSmoothCaretAnimation": "on",
+
+	//Editor settings for formatting
+	"editor.formatOnSave": true,
+
+	// Workbench:
+	"workbench.colorTheme": "GruvDark",
+	"workbench.iconTheme": "vscode-icons",
+	"window.openFilesInNewWindow": "off",
+	"workbench.sideBar.location": "left",
+	"workbench.startupEditor": "none",
+	"workbench.colorCustomizations": {
+		"statusBarItem.remoteBackground": "#00000000",
+		"scrollbarSlider.background": "#00000000"
+	},
+
+	// Terminal:
+	"terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+	"terminal.integrated.fontSize": 14,
+
+	// Formatters:
+	"prettier.semi": true,
+	"prettier.useTabs": true,
+	"prettier.singleQuote": false,
+	"prettier.jsxSingleQuote": false,
+	"prettier.arrowParens": "avoid",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.inlineSuggest.enabled": true,
+
+	// Java/Typescript
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"typescript.preferences.quoteStyle": "double",
+	"javascript.preferences.quoteStyle": "double",
+	"javascript.format.semicolons": "insert",
+	"typescript.format.semicolons": "insert",
+	"typescript.suggest.paths": false,
+	"javascript.suggest.paths": false,
+
+	// zenMode
+	"zenMode.showTabs": "multiple",
+	"zenMode.hideLineNumbers": false,
+	"zenMode.centerLayout": false,
+	"zenMode.hideStatusBar": false,
+
+	// TODO Highlighter
+	"todohighlight.isCaseSensitive": true,
+	"todohighlight.keywords": [
+		{
+			"text": "FIXME",
+			"color": "#333",
+			"backgroundColor": "#e67e22"
+		},
+		{
+			"text": "BUG",
+			"color": "#333",
+			"backgroundColor": "#e74c3c"
+		},
+		{
+			"text": "TODO",
+			"color": "#333",
+			"backgroundColor": "#2ecc71"
+		},
+		{
+			"text": "EXAMPLE",
+			"color": "#333",
+			"backgroundColor": "#2ecc71"
+		},
+		{
+			"text": "TIP",
+			"color": "#333",
+			"backgroundColor": "#0f95d4"
+		},
+		{
+			"text": "LEC",
+			"color": "#333",
+			"backgroundColor": "#0f95d4"
+		},
+		{
+			"text": "SUMMARY",
+			"color": "#333",
+			"backgroundColor": "#0f95d4"
+		},
+		{
+			"text": "NOTE",
+			"color": "#333",
+			"backgroundColor": "#e67e22"
+		}
+	],
+
+	// FindItFaster
+	"find-it-faster.general.batTheme": "base16",
+	"find-it-faster.findWithinFiles.previewWindowConfig": "top,75%,border-sharp,+{2}+3/2,~2",
+	"find-it-faster.findWithinFiles.previewCommand": "bat --color=always --style=header,grid --highlight-line {2} {1} | tail -n +2 | head -n -1",
+	"find-it-faster.general.showMaximizedTerminal": false,
+
+	// Telemetry (VSCODE)
+	"extensions.experimental.affinity": { "vscodevim.vim": 1 },
+	"telemetry.telemetryLevel": "off",
+	"vim.leader": "<space>",
+	"vim.foldfix": false,
+	"vim.easymotion": true,
+	"vim.incsearch": true,
+	"vim.useCtrlKeys": true,
+	"vim.hlsearch": true,
+	"vim.searchMatchTextColor": "#e6e3de",
+
+	"vim.highlightedyank.enable": true,
+	"vim.highlightedyank.duration": 250,
+	"vim.highlightedyank.color": "rgba(228, 228, 228, 0.101)",
+	"vim.highlightedyank.textColor": "#e6e3de",
+
+	"vim.insertModeKeyBindings": [
+		{
+			"before": ["j", "k"],
+			"after": ["<Esc>"]
+		}
+	],
+	"vim.normalModeKeyBindings": [
+		{
+			"before": ["<leader>", "s", "a"],
+			"commands": ["editor.action.selectAll"]
+		},
+		{
+			"before": ["<leader>", "w"],
+			"commands": ["workbench.action.files.save"]
+		},
+		{
+			"before": ["<leader>", "e"],
+			"commands": ["workbench.action.toggleSidebarVisibility"]
+		},
+		{
+			"before": ["<leader>", "q"],
+			"commands": ["workbench.action.closeActiveEditor"]
+		},
+		{
+			"before": ["<leader>", "h"],
+			"commands": [":nohl"]
+		},
+		{
+			"before": ["<leader>", "s", "v"],
+			"commands": ["workbench.action.splitEditor"]
+		},
+		{
+			"before": ["<leader>", "s", "h"],
+			"commands": ["workbench.action.splitEditorDown"]
+		},
+		{
+			"before": ["<leader>", "f", "b"],
+			"commands": ["workbench.action.showAllEditors"]
+		},
+		{
+			"before": ["<leader>", "f", "m"],
+			"commands": ["editor.action.format"]
+		},
+		{
+			"before": ["<S-k>"],
+			"commands": ["editor.action.showHover"]
+		},
+		{
+			"before": ["<S-h>"],
+			"commands": [":tabp"]
+		},
+		{
+			"before": ["<S-l>"],
+			"commands": [":tabnext"]
+		},
+		{
+			"before": ["leader", "z"],
+			"commands": ["workbench.action.toggleZenMode"]
+		},
+		{
+			"before": ["leader", "f", "f"],
+			"commands": ["find-it-faster.findFiles"]
+		},
+		{
+			"before": ["leader", "f", "g"],
+			"commands": ["find-it-faster.findWithinFiles"]
+		},
+		{
+			"before": ["leader", "f", "w"],
+			"after": ["y", "i", "w"],
+			"commands": [
+				"find-it-faster.findWithinFiles",
+				"workbench.action.terminal.paste"
+			]
+		},
+		{
+			"before": ["<leader>", "<S-h>"],
+			"commands": ["workbench.action.moveEditorToPreviousGroup"]
+		},
+		{
+			"before": ["<leader>", "<S-l>"],
+			"commands": ["workbench.action.moveEditorToNextGroup"]
+		},
+		{
+			"before": ["<leader>", "<S-k>"],
+			"commands": ["workbench.action.moveEditorToAboveGroup"]
+		},
+		{
+			"before": ["<leader>", "<S-j>"],
+			"commands": ["workbench.action.moveEditorToBelowGroup"]
+		}
+	],
+	"vim.visualModeKeyBindings": [
+		{
+			"before": [">"],
+			"commands": ["editor.action.indentLines"]
+		},
+		{
+			"before": ["<"],
+			"commands": ["editor.action.outdentLines"]
+		},
+		{
+			"before": ["<S-j>"],
+			"commands": ["editor.action.moveLinesDownAction"]
+		},
+		{
+			"before": ["<S-k>"],
+			"commands": ["editor.action.moveLinesUpAction"]
+		}
+	]
+}
